@@ -1,0 +1,3 @@
+# 当前文件夹下，忽略所有文件，除了 .gitignore。
+*
+!.gitignore
