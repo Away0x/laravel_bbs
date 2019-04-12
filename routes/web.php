@@ -24,3 +24,5 @@ Route::get('/', 'PagesController@root')->name('root');
  * Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
  */
 Auth::routes(['verify' => true]);
+
+Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
