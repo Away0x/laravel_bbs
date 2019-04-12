@@ -23,4 +23,4 @@ Route::get('/', 'PagesController@root')->name('root');
  * Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
  * Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
  */
-Auth::routes();
+Auth::routes(['verify' => true]);
