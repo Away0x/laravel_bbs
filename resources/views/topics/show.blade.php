@@ -67,8 +67,9 @@
       {{-- 用户回复列表 --}}
       <div class="card topic-reply mt-4">
           <div class="card-body">
-              @include('topics._reply_box', ['topic' => $topic])
-              @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
+            {{-- @includeWhen: Auth::check() 为 true 时才 render --}}
+            @includeWhen(Auth::check(), 'topics._reply_box', ['topic' => $topic])
+            @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
           </div>
       </div>
 
