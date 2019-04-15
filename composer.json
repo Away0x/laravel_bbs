@@ -15,6 +15,7 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "mews/captcha": "~2.0",
+        "mews/purifier": "~2.0",
         "overtrue/laravel-lang": "~3.0"
     },
     "require-dev": {
@@ -67,5 +68,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.laravel-china.org"
+        }
     }
 }
