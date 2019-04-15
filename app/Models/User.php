@@ -14,6 +14,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
 {
     use MustVerifyEmailTrait;
     use HasRoles;
+    use Traits\ActiveUserHelper;
 
     /**
      * $user->notifications()->get() // 获取所有的通知
