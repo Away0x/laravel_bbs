@@ -16431,6 +16431,10 @@ body {
   font-size: 14px;
 }
 
+#app > div.container {
+  margin-bottom: 100px;
+}
+
 /* header */
 
 .navbar-static-top {
@@ -16485,5 +16489,38 @@ body {
   border: 1px solid #ced4da;
   border-radius: 4px;
   padding: 3px;
+}
+
+/* Topic Index Page */
+
+.topics-index-page .topic-list .nav > li > a {
+  position: relative;
+  display: block;
+  padding: 5px 14px;
+  font-size: 0.9em;
+}
+
+.topics-index-page .topic-list a {
+  color: #444444;
+}
+
+.topics-index-page .topic-list .meta {
+  font-size: 0.9em;
+  color: #b3b3b3;
+}
+
+.topics-index-page .topic-list .meta a {
+  color: #b3b3b3;
+}
+
+.topics-index-page .topic-list .badge {
+  background-color: #d8d8d8;
+}
+
+.topics-index-page .topic-list hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 0;
+  border-top: 1px solid #dcebf5;
 }
 
