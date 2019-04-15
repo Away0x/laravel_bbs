@@ -27,7 +27,6 @@
           </li>
         </ul>
       </div>
-      </div>
 
       <div class="card-body">
         {{-- 话题列表 --}}
