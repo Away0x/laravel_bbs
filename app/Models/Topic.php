@@ -18,6 +18,11 @@ class Topic extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
     // seo 友好的 link
     public function link($params = [])
     {
